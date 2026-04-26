@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دعوة كتب كتاب مصطفي ونور</title>
+    <meta
+      name="description"
+      content="دعوة كتب كتاب بشكل تفاعلي وبستايل حكاية ممتعة للضيوف"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;500;700&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="celebrationCanvas" class="celebration-canvas" aria-hidden="true"></canvas>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+    <div class="bg-orb orb-3" aria-hidden="true"></div>
+
+    <header class="intro" id="top">
+      <div class="sparkles" aria-hidden="true"></div>
+      <p class="eyebrow">فرحتنا تكمل بيكم</p>
+      <h1>دعوة كتب كتاب مصطفي ونور</h1>
+      <p class="lead">
+        في يوم مستنيينه من زمان، و وجودكم هو اللي هيخلّي الفرحة فرحة.
+      </p>
+      <button id="openInvite" class="open-btn" type="button">
+        افتح الدعوة
+      </button>
+      <p class="hint">انزل تحت وخلي كل فصل يحكي نفسه</p>
+    </header>
+
+    <main class="story" id="story" aria-live="polite">
+      <section class="chapter" data-chapter>
+        <div class="chapter-card chapter-journey">
+          <span class="chapter-no">الفصل 01</span>
+          <h2>البداية: مصطفي لقى القلب اللي يتمناه</h2>
+          <p>
+            من أول لقاء، مصطفي شاف في نور طيبة وهدوء وخفة روح خطفت قلبه.
+            يوم بعد يوم اتأكد إن دي شريكة العمر اللي يتمناها .
+          </p>
+          <p>
+            (انا مش تحت تهديد السلاح)
+          </p>
+          <!-- <ul class="journey-steps">
+            <li>قلب طيب جمعنا.</li>
+            <li>قرينا الفاتحة و اتخطبنا.</li>
+            <li>والنهارده بنكتب أول صفحة في بيتنا الجديد وسط فرحة الأهل.</li>
+          </ul> -->
+        </div>
+        <button class="chapter-next" type="button">الفصل التالي</button>
+      </section>
+
+      <section class="chapter" data-chapter>
+        <div class="chapter-card">
+          <span class="chapter-no">الفصل 02</span>
+          <h2> جه معاد الوعد</h2>
+          <p>
+            بكل الحب، بندعيكم تشرفونا في كتب كتابنا عشان نفرح بيكم وبوجودكم.
+            الفرحة من غيركم ناقصة.
+          </p>
+          <div class="detail-grid">
+            <div class="detail-item">
+              <h3>التاريخ</h3>
+              <p>الجمعة 12 يونيو 2026</p>
+            </div>
+            <div class="detail-item">
+              <h3>الميعاد</h3>
+              <p>الساعة 5:00 مساءً</p>
+            </div>
+          </div>
+          <div class="countdown" id="countdown" aria-live="polite">
+            <p class="countdown-title">العد التنازلي لبداية كتب الكتاب</p>
+            <div class="countdown-clock" role="timer" aria-label="الوقت المتبقي">
+              <div class="count-box clock-box">
+                <span id="daysLeft">--</span>
+                <small>يوم</small>
+              </div>
+              <span class="blink-colon" aria-hidden="true">:</span>
+              <div class="count-box clock-box">
+                <span id="hoursLeft">--</span>
+                <small>ساعة</small>
+              </div>
+              <span class="blink-colon" aria-hidden="true">:</span>
+              <div class="count-box clock-box">
+                <span id="minutesLeft">--</span>
+                <small>دقيقة</small>
+              </div>
+              <span class="blink-colon" aria-hidden="true">:</span>
+              <div class="count-box clock-box">
+                <span id="secondsLeft">--</span>
+                <small>ثانية</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="chapter-next" type="button">الفصل التالي</button>
+      </section>
+
+      <section class="chapter" data-chapter>
+        <div class="chapter-card timeline">
+          <span class="chapter-no">الفصل 03</span>
+          <h2>خطة الليلة</h2>
+          <ul>
+            <li><span>7:00</span> استقبال الأحباب</li>
+            <li><span>7:30</span> كتب الكتاب</li>
+            <li><span>8:15</span> صور وزفة وضحك</li>
+            <li><span>9:00</span> عشا وحواديت</li>
+          </ul>
+        </div>
+        <button class="chapter-next" type="button">الفصل التالي</button>
+      </section>
+
+      <section class="chapter" data-chapter>
+        <div class="chapter-card">
+          <span class="chapter-no">الفصل 04</span>
+          <h2>العنوان</h2>
+          <p>مسجد ليلة القدر - طريق مصر اسماعيليا الصحراوي</p>
+          <a class="map-link" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+            افتح اللوكيشن
+          </a>
+        </div>
+        <button class="chapter-next" type="button">الفصل التالي</button>
+      </section>
+
+      <section class="chapter finale" data-chapter>
+        <div class="chapter-card">
+          <span class="chapter-no">الفصل الأخير</span>
+          <h2>مستنيينكم من قلبنا</h2>
+          <p>
+            وجودكم هو الهدية الحقيقية. فرحتنا مش هتكتمل من غيركم، وكتب كتابنا مش هيكون كامل إلا بيكم.
+          </p>
+          <!-- <a class="rsvp-btn" href="tel:+201000000000">تأكيد الحضور</a> -->
+        </div>
+        <button class="chapter-next" type="button">ارجع للبداية</button>
+      </section>
+    </main>
+
+    <button id="nextSection" class="next-btn" type="button">التالي</button>
+
+    <div class="progress-wrap" aria-hidden="true">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
