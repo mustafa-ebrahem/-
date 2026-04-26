@@ -2,7 +2,6 @@ const openInviteBtn = document.getElementById("openInvite");
 const chapters = document.querySelectorAll("[data-chapter]");
 const story = document.getElementById("story");
 const progressBar = document.getElementById("progressBar");
-const nextSectionBtn = document.getElementById("nextSection");
 const chapterNextButtons = document.querySelectorAll(".chapter-next");
 const daysLeft = document.getElementById("daysLeft");
 const hoursLeft = document.getElementById("hoursLeft");
@@ -58,24 +57,6 @@ const chapterObserver = new IntersectionObserver(
 chapters.forEach((chapter, index) => {
   chapter.style.transitionDelay = `${index * 110}ms`;
   chapterObserver.observe(chapter);
-});
-
-nextSectionBtn?.addEventListener("click", () => {
-  const currentY = window.scrollY + window.innerHeight * 0.35;
-  const currentChapter = chapterList.find((chapter) => {
-    const top = chapter.offsetTop;
-    const bottom = top + chapter.offsetHeight;
-    return currentY >= top && currentY < bottom;
-  });
-
-  const nextChapter =
-    chapterList.find((chapter) => chapter.offsetTop > currentY) || getNextChapter(currentChapter);
-
-  if (!nextChapter) {
-    return;
-  }
-
-  nextChapter.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 chapterNextButtons.forEach((button) => {
