@@ -79,7 +79,7 @@ const updateProgress = () => {
   progressBar.style.width = `${Math.min(Math.max(progress, 0), 100)}%`;
 };
 
-const eventDate = new Date("2026-06-12T17:00:00+03:00");
+const eventDate = new Date("2026-07-03T16:45:00+03:00");
 
 const pad2 = (value) => String(value).padStart(2, "0");
 
