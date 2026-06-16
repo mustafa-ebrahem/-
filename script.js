@@ -62,6 +62,13 @@ chapters.forEach((chapter, index) => {
 chapterNextButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const currentChapter = button.closest(".chapter");
+    
+    // If this is the finale chapter, scroll to top of page
+    if (currentChapter?.classList.contains("finale")) {
+      document.getElementById("top")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+    
     const nextChapter = getNextChapter(currentChapter);
 
     if (!nextChapter) {
